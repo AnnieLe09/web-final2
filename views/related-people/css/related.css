@@ -1,0 +1,313 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    background-color: var(--grey2);
+}
+
+.nav-menu {
+    align-self: center;
+    padding: 0 20px;
+    color: var(--blue1);
+}
+
+.banner {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.content {
+    margin: auto;
+    width: 80%;
+    height: auto;
+    background-color: white;
+    margin-top: 100px;
+    z-index: 10;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px 20px;
+}
+
+.path a {
+    text-decoration: none;
+    color: #A19C9C;
+    font-size: 24sp;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: 2fr 7fr;
+    gap: 5px;
+}
+
+.side-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 640px;
+    border: 3px solid #D8D2CB;
+    padding: 10px 20px;
+    background-color: #EEEEEE;
+}
+
+#avatar-username {
+    align-self: center;
+}
+
+#avatar {
+    align-self: center;
+    padding-bottom: 5px;
+}
+
+#avatar img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+
+#username {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.btn-money {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 90px;
+    height: 2rem;
+    background-color: #398AB9;
+}
+
+.main-info {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.info-tag {
+    box-shadow: 2px 2px 2px lightblue;
+}
+
+.detail-container {
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    height: 640px;
+}
+
+#row-tabs {
+    display: grid;
+    grid-template-columns: 5fr 5fr 5fr 5fr 3fr;
+    gap: 10px;
+    height: 60px;
+}
+
+.current-page a,
+#row-tabs a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    border: 3px solid #D8D2CB;
+    border-bottom: none;
+    background-color: #D8D2CB;
+}
+
+#detail {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    background-color: #EEEEEE;
+    border: 3px solid #D8D2CB;
+    padding: 20px;
+}
+
+.detail-history {
+    background-color: #EEEEEE;
+    border: 3px solid #D8D2CB;
+    padding: 30px 20px;
+    height: 580px;
+}
+
+#basic-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 10px 30px;
+}
+
+#status {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 10px 30px;
+}
+
+#name-gender-DOB {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #D8D2CB;
+}
+
+#name,
+#gender,
+#DOB,
+#ID,
+#address,
+#current-status,
+#hospital,
+#note {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    background: #D8D2CB;
+    padding: 10px;
+}
+
+#note {
+    height: 6rem !important;
+}
+
+.history-header {
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .info-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .side-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: auto;
+        width: 100%;
+        border: none;
+        background-color: #EEEEEE;
+    }
+
+    .main-info {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        padding-left: 10px;
+    }
+
+    #payment,
+    #prepaid {
+        display: none;
+    }
+
+    #avatar {
+        display: flex;
+        justify-content: center;
+        background-color: none;
+    }
+
+    #avatar img {
+        width: 150px;
+        height: 150px;
+        align-self: center;
+    }
+
+    #username {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-size: small;
+        margin-top: 0;
+    }
+
+    .info-tag {
+        background-color: white;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    .detail-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #row-tabs {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        height: auto;
+    }
+
+    .content {
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    body{
+        background-color: white;
+    }
+
+    .content{
+        padding: 10px 10px;
+        width: 100%;
+        background-color: white;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    #name-gender-DOB {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-tag{
+        text-align: center;
+    }
+
+    #name,
+    #gender,
+    #DOB,
+    #ID,
+    #address,
+    #current-status,
+    #hospital,
+    #note {
+        display: flex;
+        align-items: center;
+        height: auto;
+        background: #D8D2CB;
+    }
+
+    #detail, #basic-info, #status{
+        padding: 5px 5px;
+    }
+}

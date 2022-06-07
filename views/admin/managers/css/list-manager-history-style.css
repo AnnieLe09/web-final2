@@ -1,0 +1,51 @@
+.container{
+    padding-top: 5px;
+    margin: auto;
+    width:80%;
+    height:720px;
+    background-color: white;
+    margin-top: 100px;
+    z-index: 10;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+table{
+    width: 80%;
+}
+@media (min-width: 800px) and (max-width: 991px) {
+    .container{
+        height: 820px;
+    }
+}
+
+@media (max-width: 779px) {
+    .container{
+        height: 880px;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .container{
+        box-shadow: none;
+        margin-top: 10px;
+        width: 100%;
+    }
+    body{
+        background-color: white;
+    }
+    .banner{
+        position: relative;
+    }
+    .searchbar-input{
+        background-color: #ffffff;
+        width: 80%;
+    }
+    .footer-top{
+        flex-direction: column;
+    }
+    .footer-box{
+        width: 86%;
+    }
+}

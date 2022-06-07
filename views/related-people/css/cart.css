@@ -1,0 +1,150 @@
+#current-cart {
+    display: flex;
+    flex-direction: column;
+}
+
+#cart-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.selected-package-container {
+    padding: 10px 20px;
+}
+
+.selected-package {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    height: 150px;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.package-image img {
+    width: 150px;
+    height: 150px;
+}
+
+.package-detail {
+    margin-left: 10px;
+}
+
+.package-name {
+    font-size: large;
+    font-weight: bold;
+}
+
+.package-products {
+    font-size: smaller;
+}
+
+.price,
+.amount-modify,
+.total{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.remove-package {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    border: none;
+}
+
+
+.price {
+    color: black;
+}
+
+#current-amount,
+#decrease,
+#increase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 10px;
+}
+
+#decrease, #increase{
+    border-radius: 5px;
+}
+
+.total {
+    color: red;
+}
+
+#purchase,
+#clear-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px 20px;
+    width: 120px;
+    height: 3rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#purchase {
+    background-color: #398AB9;
+}
+
+#clear-cart {
+    background-color: #535353;
+}
+
+#purchase a,
+#clear-cart a {
+    color: white;
+    text-decoration: none;
+}
+
+#total-cost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.total-cost-text {
+    font-weight:bolder;
+    font-size: larger;
+}
+
+@media (max-width: 922px) {
+    .selected-package {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 3fr 1fr;
+        gap: 5px;
+        height: 200px;
+        background-color: #EEEEEE;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 768px){
+    .selected-package-container {
+        padding: 5px 2px;
+    }
+
+    .selected-package{
+        height: auto;
+        overflow-x: auto;
+    }
+    .remove-package{
+        padding-bottom: 10px;
+    }
+}

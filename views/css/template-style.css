@@ -1,0 +1,134 @@
+:root {
+    --blue1: #1C658C;
+    --blue2: #398AB9;
+    --grey1: #D8D2CB;
+    --grey2: #EEEEEE;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    margin:0px;
+    background-color: var(--grey2);
+} 
+
+/*footer*/
+/*
+.footer{
+    position: relative;
+    background-color: var(--blue1);
+    width:100%;
+    margin-top:50px;
+    z-index: 12;
+}
+.footer-top{
+    position: relative;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.footer-box{
+    margin: 20px;
+    width: 250px;
+    color:white;
+   
+}
+.footer-bottom{
+    color:white;
+}
+.footer-bottom-slogan{
+    height:40px;
+    margin: 1%;
+    margin-bottom:0px;
+}*/
+
+
+/*footer*/
+/*.footer{
+    background-color: var(--blue1);
+    width:100%;
+    margin-top:50px;
+}
+.footer-top{
+    position: relative;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.footer-box{
+    margin: 20px 7% 20px 7%;
+    width: 20%;
+    color:white;
+   
+}
+.footer-bottom{
+    color:white;
+}
+.footer-bottom-slogan{
+    height:40px;
+    margin: 1%;
+    margin-bottom:0px;
+}*/
+
+/*navbar*/
+/*.navbar{
+    background-color: var(--grey2);
+    position: sticky;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--blue1);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 100;
+}
+.logo-img{
+    height:60px;
+    align-self:center;
+}
+.nav-list{
+    list-style-type: none;
+    display:inline-block;
+}
+li{
+    display:inline-block;
+    margin: 0 10px;
+}
+.nav-links{
+    text-decoration: none;
+    color:var(--blue1);
+    font-weight: bold;
+}
+.nav-menu{
+    align-self: center;
+    padding: 0 20px;
+    color: var(--blue1);
+}*/
+
+
+
+
+/*
+@media only screen and (max-width: 800px) {
+    .searchbar{
+        width:90%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .content{
+        background-color: var(--grey2);
+        box-shadow: none;
+        margin-top: 10px;
+    }
+    .banner{
+        position: relative;
+    }
+    .searchbar-input{
+        background-color: var(--grey2);
+        width: 80%;
+    }
+    .footer-top{
+        flex-direction: column;
+    }
+    .footer-box{
+        width: 100%;
+    }
+}*/

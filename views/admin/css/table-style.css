@@ -1,0 +1,37 @@
+:root {
+    --blue1: #1C658C;
+    --blue2: #398AB9;
+    --grey1: #D8D2CB;
+    --grey2: #EEEEEE;
+}
+
+table{
+    width: 100%;
+    margin:auto;
+    margin-top: 0px;
+    border-collapse: collapse;  
+}
+
+table, tr, th, td{
+    border: 3px solid var(--grey1);
+}
+
+.table-stt{
+    text-align: center;
+}
+
+tbody {   
+    overflow-y: scroll;    
+    overflow-x: hidden;  
+}
+
+thead{
+    position: sticky; 
+    top: 0;
+    text-align: center;
+    background-color: var(--grey1);
+    padding: 3px;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
